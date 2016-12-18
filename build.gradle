@@ -1,0 +1,22 @@
+group 'com.cartisan'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile (
+            "org.projectlombok:lombok:1.16.12"
+    )
+    testCompile(
+            "junit:junit:4.12",
+            "org.mockito:mockito-all:1.10.19"
+    )
+}
+
+
